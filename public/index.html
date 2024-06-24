@@ -3,29 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/favicon/coffee-machine_434400.png" type="image/gif" sizes="16x16" />
     <link href="./output.css" rel="stylesheet" />
     <title>Coffee</title>
   </head>
   <body>
     <div id="root">
-      <div
-        class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-gray-400"
-      >
-        <header class="py-6 mx-10">
-          <nav class="flex justify-between items-center">
-            <div
-              class="logo basis-2/6 text-center font-semibold cursor-pointer"
-            >
-              Coffee style.
-            </div>
+      <div class="content-wrapper font-Karla max-w-screen-2xl text-base mx-auto px-8 bg-gray-400">
+        <header class="p-6 mx-auto">
+          <nav class="flex justify-between items-center relative">
+            <div class="logo basis-2/6 text-lg text-center font-semibold cursor-pointer">CoffeeStyle.</div>
             <ul
-              class="basis-3/6 flex items-center justify-end gap-8 uppercase text-sm text-gray-500 font-medium"
+              id="top-menu"
+              class="animate-slowDown basis-3/6 hidden lg:flex lg:items-center lg:justify-end lg:gap-8 uppercase text-sm text-gray-500 font-medium"
             >
               <li class="ct-top-menu-item">
                 <a class="" href="#">Home</a>
               </li>
               <li class="ct-top-menu-item">
-                <a class="" href="#">Our Product</a>
+                <a class="" href="#">Products</a>
               </li>
               <li class="ct-top-menu-item">
                 <a class="" href="#">Blog</a>
@@ -39,20 +35,14 @@
               <li class="ct-top-menu-item">
                 <a class="" href="#">StyleGuide</a>
               </li>
+              <li class="ct-top-menu-item ct-top-menu-item-active">
+                <a class="" href="#">HocpamDev</a>
+              </li>
             </ul>
-            <ul
-              class="basis-1/6 flex justify-start items-center uppercase font-medium ml-16"
-            >
+            <ul class="basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center uppercase font-medium ml-16">
               <li class="ct-top-menu-item">
-                <a class="" href="#">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="ct-icon"
-                  >
+                <a class="flex items-center" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ct-icon">
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
@@ -60,12 +50,24 @@
                     />
                   </svg>
                   <span class="mx-auto">Cart</span>
-                  <span class="ct-badge-circle bg-orange-400 text-white"
-                    >10</span
-                  >
+                  <span class="ct-badge-circle bg-orange-400 text-white">1</span>
                 </a>
               </li>
             </ul>
+
+            <div class="lg:hidden basis-1/6 flex items-center cursor-pointer px-3 sm:px-8">
+              <svg
+                id="toggle-top-menu-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="ct-icon"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </div>
           </nav>
         </header>
         <main>
@@ -89,5 +91,6 @@
       <!-- End content-wrapper -->
     </div>
     <!-- End root -->
+    <script src="./main.js"></script>
   </body>
 </html>
