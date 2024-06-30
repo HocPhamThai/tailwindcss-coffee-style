@@ -32,5 +32,10 @@
   @apply w-8 h-px bg-gray-200;
 }
 .ct-subheadline-label {
-  @apply mx-4 text-center uppercase tracking-widest text-gray-500 font-medium text-[13px];
+  @apply mx-4 text-center uppercase tracking-widest text-gray-500 font-medium text-xs;
+}
+
+/* button */
+.ct-button {
+  @apply text-center uppercase text-xs font-semibold px-9 py-4 tracking-widest cursor-pointer hover:opacity-90;
 }
