@@ -572,32 +572,16 @@ video {
   left: 50%;
 }
 
+.left-\[calc\(-50vw_\+_50\%\)\]{
+  left: calc(-50vw + 50%);
+}
+
 .right-3{
   right: 0.75rem;
 }
 
 .top-3{
   top: 0.75rem;
-}
-
-.left-\[\]{
-  left: ;
-}
-
-.left-\[-50\%\]{
-  left: -50%;
-}
-
-.left-\[-50vw_\+_\]{
-  left: -50vw +;
-}
-
-.left-\[-50vw_\+_50\%\]{
-  left: -50vw + 50%;
-}
-
-.left-\[calc\(-50vw_\+_50\%\)\]{
-  left: calc(-50vw + 50%);
 }
 
 .mx-16{
@@ -613,6 +597,16 @@ video {
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mb-16{
@@ -675,12 +669,20 @@ video {
   display: none;
 }
 
+.h-\[1200px\]{
+  height: 1200px;
+}
+
 .h-\[130px\]{
   height: 130px;
 }
 
 .h-\[280px\]{
   height: 280px;
+}
+
+.h-\[300px\]{
+  height: 300px;
 }
 
 .h-\[380px\]{
@@ -703,6 +705,10 @@ video {
   width: 91.666667%;
 }
 
+.w-\[100vw\]{
+  width: 100vw;
+}
+
 .w-\[95\%\]{
   width: 95%;
 }
@@ -714,14 +720,6 @@ video {
 .w-max{
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-screen{
-  width: 100vw;
-}
-
-.w-\[100vw\]{
-  width: 100vw;
 }
 
 .max-w-screen-2xl{
@@ -847,6 +845,11 @@ video {
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
 }
 
+.bg-slate-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -920,6 +923,22 @@ video {
   background-image: url('./img/slider.jpg');
 }
 
+.bg-\[url\(\'\.\/img\/\.jpg\'\)\]{
+  background-image: url('./img/.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/lifestyle_story_01\.jpg\'\)\]{
+  background-image: url('./img/lifestyle_story_01.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/lifestyle_story_02\.jpg\'\)\]{
+  background-image: url('./img/lifestyle_story_02.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/lifestyle_story_03\.jpg\'\)\]{
+  background-image: url('./img/lifestyle_story_03.jpg');
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -973,6 +992,10 @@ video {
   padding-left: 2rem;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1021,6 +1044,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[13px\]{
+  font-size: 13px;
+}
+
 .font-medium{
   font-weight: 500;
 }
@@ -1043,6 +1070,18 @@ video {
 
 .leading-loose{
   line-height: 2;
+}
+
+.leading-normal{
+  line-height: 1.5;
+}
+
+.leading-7{
+  line-height: 1.75rem;
+}
+
+.leading-8{
+  line-height: 2rem;
 }
 
 .tracking-widest{
@@ -1194,7 +1233,7 @@ video {
 }
 
 .ct-button:hover{
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .after\:absolute::after{
