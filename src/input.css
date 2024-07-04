@@ -37,5 +37,5 @@
 
 /* button */
 .ct-button {
-  @apply text-center uppercase text-xs font-semibold px-9 py-4 tracking-widest cursor-pointer hover:opacity-95;
+  @apply text-center uppercase text-[13px] font-semibold px-9 py-4 tracking-widest cursor-pointer hover:opacity-95;
 }
